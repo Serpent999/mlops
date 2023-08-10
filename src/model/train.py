@@ -36,7 +36,7 @@ def get_csvs_df(path):
 
 # TO DO: add function to split data
 def split_data(df):
-    return X, y = df[['Pregnancies','PlasmaGlucose','DiastolicBloodPressure','TricepsThickness','SerumInsulin','BMI','DiabetesPedigree','Age']].values, df['Diabetic'].values
+    return x, y = df[['Pregnancies','PlasmaGlucose','DiastolicBloodPressure','TricepsThickness','SerumInsulin','BMI','DiabetesPedigree','Age']].values, df['Diabetic'].values
 
 
 def train_model(reg_rate, X_train, X_test, y_train, y_test):
