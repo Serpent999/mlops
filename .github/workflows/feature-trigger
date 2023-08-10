@@ -4,4 +4,5 @@ on:
       - main
       - name: Placeholder
         run: |
+          echo "Testing"
           echo "Will add code checks here in next challenge"
