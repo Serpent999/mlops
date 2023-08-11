@@ -16,4 +16,11 @@ jobs:
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
 
+    - name: Run job
+      run: |
+        cd mlops
+        cd src
+        az ml job create --file job.yml --resource-group MLDemo --workspace-name MLservice1
+    
+
 
